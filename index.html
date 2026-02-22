@@ -3,40 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Automateverse LLC website with responsive design and contemporary features">
-    <meta name="keywords" content="Automateverse, automateversellc">
-    <meta name="author" content="Automateversellc">
-    
+    <meta name="description" content="AutomateVerse LLC — Generative AI consulting, custom LLM solutions, AI-powered automation, and intelligent agent development for enterprises.">
+    <meta name="keywords" content="Generative AI, AI consulting, LLM solutions, AI automation, RAG, AI agents, AutomateVerse, automateversellc, GPT, enterprise AI">
+    <meta name="author" content="AutomateVerse LLC">
+
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Automateverse LLC">
-    <meta property="og:description" content="One stop shop for your AI needs and more.">
+    <meta property="og:title" content="AutomateVerse LLC — Generative AI Services">
+    <meta property="og:description" content="Transform your business with Generative AI. Strategy, custom LLM solutions, AI agents, and intelligent automation.">
     <meta property="og:type" content="website">
-    
-    <title>Automateverse LLC - Modern AI Experiences</title>
-    
+    <meta property="og:url" content="https://automateversellc.com">
+
+    <title>AutomateVerse LLC — Generative AI Consulting &amp; Solutions</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AutomateVerse LLC",
+        "url": "https://automateversellc.com",
+        "email": "info@automateversellc.com",
+        "description": "Generative AI consulting and solutions company specializing in custom LLM development, AI-powered automation, and intelligent agent systems.",
+        "sameAs": [
+            "https://github.com/automateversellc"
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="#home">Automateverse LLC</a>
+                    <a href="#home">
+                        <span class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+                                <path d="M8 22L16 10L24 22H8Z" fill="white" opacity="0.9"/>
+                                <path d="M12 22L16 15L20 22H12Z" fill="white" opacity="0.6"/>
+                                <defs>
+                                    <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+                                        <stop stop-color="#6366f1"/>
+                                        <stop offset="1" stop-color="#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="logo-text">AutomateVerse</span>
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#process" class="nav-link">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#industries" class="nav-link">Industries</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -52,53 +89,266 @@
     </header>
 
     <main>
+        <!-- ===== HERO ===== -->
         <section id="home" class="hero">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-glow hero-glow--1"></div>
+            <div class="hero-glow hero-glow--2"></div>
             <div class="hero-content">
-                <h1>Modern Web Experience</h1>
-                <p>Welcome to the future of integrated AI and more. Built with cutting-edge technologies and modern design principles for an exceptional user experience.</p>
-                <a href="#about" class="cta-button">
-                    <span>Discover More</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                </a>
+                <span class="hero-badge">Generative AI Solutions</span>
+                <h1>Transform Your Business with Generative AI</h1>
+                <p>We help enterprises harness the power of large language models, intelligent automation, and AI agents to unlock new possibilities and accelerate innovation.</p>
+                <div class="hero-cta-group">
+                    <a href="#services" class="cta-button cta-primary">
+                        <span>Explore Services</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </a>
+                    <a href="#contact" class="cta-button cta-secondary">
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
             </div>
         </section>
 
+        <!-- ===== ABOUT ===== -->
         <section id="about" class="section">
             <div class="container">
-                <h2>About This Experience</h2>
-                <p>This modern website showcases contemporary AI design principles. Built with performance and user experience in mind.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Featured Innovations</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>🎨 Modern Design System</h3>
-                        <p>A comprehensive design system featuring contemporary UI components, consistent typography, and a cohesive color palette that creates a visually stunning experience.</p>
+                <span class="section-label">Who We Are</span>
+                <h2>Pioneering Generative AI for the Enterprise</h2>
+                <p class="section-subtitle">AutomateVerse LLC is a Generative AI consulting and solutions company. We partner with forward-thinking organizations to design, build, and deploy AI systems that drive measurable business outcomes.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To make advanced Generative AI accessible, practical, and impactful for businesses of every size — turning complex technology into competitive advantage.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>⚡ Performance Optimized</h3>
-                        <p>Built with performance in mind, featuring optimized loading times, efficient animations, and responsive images that deliver exceptional user experiences across all devices.</p>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>A world where every organization can leverage Generative AI to amplify human creativity, automate the mundane, and solve problems once thought impossible.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>🚀 Future-Ready Technology</h3>
-                        <p>Leveraging the latest web technologies including CSS Grid, Flexbox, and modern JavaScript APIs to create a website that's both cutting-edge and accessible.</p>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Our Expertise</h3>
+                        <p>Deep hands-on experience across LLMs, RAG architectures, multi-agent systems, prompt engineering, and end-to-end AI deployment on cloud platforms.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <!-- ===== SERVICES ===== -->
+        <section id="services" class="section section--dark">
             <div class="container">
-                <h2>Let's Connect</h2>
-                <p>Ready to collaborate on something amazing? Let's bring your ideas to life with modern web technologies.</p>
-                <div class="contact-info">
-                    <p>📧 info@automateversellc.com</p>
-                    <p>🐙 @automateversellc</p>
+                <span class="section-label">What We Do</span>
+                <h2>Generative AI Services</h2>
+                <p class="section-subtitle">End-to-end capabilities to take your AI initiatives from concept to production.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <h3>Gen AI Strategy & Consulting</h3>
+                        <p>We assess your landscape, identify high-impact AI opportunities, and build a roadmap that aligns Generative AI with your business goals.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 1 3 2 4l-5 8h14l-5-8c1-1 2-2 2-4a4 4 0 0 0-4-4Z"/><path d="M12 18v4"/></svg>
+                        </div>
+                        <h3>Custom LLM & GPT Solutions</h3>
+                        <p>Fine-tuned models, custom GPT applications, and domain-specific language solutions built to your exact specifications and data.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M2 12h20"/><path d="M12 2v20"/></svg>
+                        </div>
+                        <h3>AI-Powered Automation</h3>
+                        <p>Intelligent workflows and process automation that combine Gen AI with existing systems to eliminate bottlenecks and reduce manual effort.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="13" y2="11"/></svg>
+                        </div>
+                        <h3>RAG & Knowledge Systems</h3>
+                        <p>Retrieval-Augmented Generation pipelines that ground LLM responses in your proprietary data for accurate, context-aware answers.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="M4.22 4.22l2.83 2.83"/><path d="M16.95 16.95l2.83 2.83"/><path d="M1 12h4"/><path d="M19 12h4"/><path d="M4.22 19.78l2.83-2.83"/><path d="M16.95 7.05l2.83-2.83"/></svg>
+                        </div>
+                        <h3>AI Agent Development</h3>
+                        <p>Autonomous and semi-autonomous AI agents that reason, plan, and execute complex tasks — from customer support to data analysis.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                        </div>
+                        <h3>AI Integration & Deployment</h3>
+                        <p>Seamless integration of AI models into your existing tech stack with production-grade deployment, monitoring, and continuous optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROCESS ===== -->
+        <section id="process" class="section">
+            <div class="container">
+                <span class="section-label">How We Work</span>
+                <h2>From Vision to Production</h2>
+                <p class="section-subtitle">A proven, collaborative process that turns your Gen AI ambitions into deployed, measurable solutions.</p>
+                <div class="process-timeline">
+                    <div class="process-step" data-step="01">
+                        <div class="process-marker">
+                            <span>01</span>
+                        </div>
+                        <div class="process-content">
+                            <h3>Discover</h3>
+                            <p>We immerse ourselves in your business, understand your data landscape, and identify the highest-value Gen AI opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="02">
+                        <div class="process-marker">
+                            <span>02</span>
+                        </div>
+                        <div class="process-content">
+                            <h3>Strategize</h3>
+                            <p>We craft a clear AI roadmap — selecting the right models, architectures, and integration points for maximum impact.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="03">
+                        <div class="process-marker">
+                            <span>03</span>
+                        </div>
+                        <div class="process-content">
+                            <h3>Build</h3>
+                            <p>Rapid prototyping to production-grade development. We build, test, and iterate with your team every step of the way.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="04">
+                        <div class="process-marker">
+                            <span>04</span>
+                        </div>
+                        <div class="process-content">
+                            <h3>Optimize</h3>
+                            <p>Continuous monitoring, evaluation, and refinement to ensure your AI systems stay accurate, efficient, and aligned with evolving needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INDUSTRIES ===== -->
+        <section id="industries" class="section section--dark">
+            <div class="container">
+                <span class="section-label">Where We Deliver</span>
+                <h2>Industries We Serve</h2>
+                <p class="section-subtitle">Generative AI applications tailored to the unique challenges of your industry.</p>
+                <div class="industries-grid">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+                        </div>
+                        <h3>Financial Services</h3>
+                        <p>AI-driven risk analysis, document processing, and intelligent customer interactions.</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        </div>
+                        <h3>Healthcare</h3>
+                        <p>Clinical documentation, medical research synthesis, and patient engagement powered by AI.</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Technology</h3>
+                        <p>Code generation, intelligent DevOps, automated testing, and AI-augmented product development.</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect x="6" y="12" width="12" height="8" rx="1"/><path d="M2 20h20"/></svg>
+                        </div>
+                        <h3>Retail & E-Commerce</h3>
+                        <p>Personalized recommendations, AI-generated content, and conversational shopping experiences.</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Adaptive learning platforms, automated grading, and AI tutoring systems for modern education.</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Legal & Compliance</h3>
+                        <p>Contract analysis, regulatory research, and compliance monitoring automated with Gen AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY US ===== -->
+        <section id="why-us" class="section">
+            <div class="container">
+                <span class="section-label">Why AutomateVerse</span>
+                <h2>What Sets Us Apart</h2>
+                <p class="section-subtitle">We don't just build AI — we build AI that works for your business.</p>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-number">01</div>
+                        <h3>Deep Gen AI Expertise</h3>
+                        <p>Our team lives and breathes Generative AI — from transformer architectures to production deployment. We bring real-world experience, not just theory.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">02</div>
+                        <h3>Results-Driven Approach</h3>
+                        <p>Every engagement starts with your business outcomes. We measure success by the tangible impact our AI solutions deliver — faster processes, better decisions, lower costs.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">03</div>
+                        <h3>Tailored, Not Off-the-Shelf</h3>
+                        <p>No cookie-cutter solutions. We architect AI systems that fit your unique data, workflows, and goals — ensuring adoption and long-term value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section section--dark">
+            <div class="container">
+                <span class="section-label">Get Started</span>
+                <h2>Let's Build the Future Together</h2>
+                <p class="section-subtitle">Ready to explore what Generative AI can do for your organization? Reach out — we'd love to hear about your vision.</p>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <h3>Email Us</h3>
+                        <a href="mailto:info@automateversellc.com">info@automateversellc.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/automateversellc" target="_blank" rel="noopener noreferrer">@automateversellc</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3>Location</h3>
+                        <p>United States</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,7 +356,21 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Automateverse. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">AutomateVerse</span>
+                    <p>Generative AI consulting and solutions for the modern enterprise.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AutomateVerse LLC. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

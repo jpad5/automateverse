@@ -1,121 +1,74 @@
-# Automateverse GitHub Pages Website
+# AutomateVerse LLC — Generative AI Services Website
 
-A simple, responsive static website designed for hosting on GitHub Pages. This project demonstrates modern web development practices with clean HTML, CSS, and JavaScript.
+Professional, responsive static website for **AutomateVerse LLC**, a Generative AI consulting and solutions company. Hosted on GitHub Pages at [automateversellc.com](https://automateversellc.com).
+
+## Overview
+
+A single-page website built with pure HTML, CSS, and JavaScript — no frameworks, no build tools. Designed to communicate AutomateVerse's Gen AI service offerings with a premium, modern aesthetic.
+
+## Sections
+
+| Section | Description |
+|---------|-------------|
+| **Hero** | Bold value proposition with animated background |
+| **About** | Mission, vision, and expertise |
+| **Services** | Six core Gen AI service offerings |
+| **Process** | Four-step engagement methodology |
+| **Industries** | Six target verticals |
+| **Why Us** | Three key differentiators |
+| **Contact** | Email, GitHub, and location |
 
 ## Features
 
-- 🎨 **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
-- 🚀 **Modern CSS** - Clean styling with flexbox and grid layouts
-- ⚡ **Interactive JavaScript** - Smooth scrolling, mobile menu, and scroll animations
-- 📱 **Mobile-First** - Optimized for mobile experiences
-- 🎯 **SEO Ready** - Semantic HTML structure
-- 🌐 **GitHub Pages Ready** - Configured for easy deployment
+- Elegant dark/light section design with glassmorphism cards
+- Animated hero with floating gradient glows and grid overlay
+- Scroll-triggered staggered animations (Intersection Observer)
+- Active navigation tracking on scroll
+- Fully responsive (mobile-first breakpoints at 480px, 768px, 1024px)
+- SEO-optimized with structured data (JSON-LD)
+- Zero external dependencies — pure HTML, CSS, JS
 
 ## Project Structure
 
 ```
-myeai-av-site-repo/
-├── .github/
-│   └── copilot-instructions.md
+├── index.html          # All sections and content
 ├── css/
-│   └── styles.css
+│   └── styles.css      # Design system and responsive layout
 ├── js/
-│   └── script.js
-├── index.html
+│   └── script.js       # Animations, nav, and interactions
+├── CNAME               # Custom domain (automateversellc.com)
 └── README.md
 ```
 
-## Getting Started
+## Local Development
 
-### Prerequisites
+```bash
+# Clone
+git clone https://github.com/jpad5/automateverse.git
+cd automateverse
 
-- A modern web browser
-- Git (for cloning and pushing to GitHub)
-- A GitHub account (for GitHub Pages hosting)
+# Serve locally (Python 3)
+python -m http.server 8000
+# Open http://localhost:8000
+```
 
-### Local Development
+Or use the VS Code task: **Live Server** (runs `python -m http.server 8000`).
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/automateverse/[repository-name].git
-   cd [repository-name]
-   ```
+## Deployment
 
-2. **Open locally**
-   - Simply open `index.html` in your web browser
-   - Or use a local development server like Live Server in VS Code
+The site deploys automatically to GitHub Pages from the `main` branch. Custom domain is configured via the `CNAME` file.
 
-3. **Make changes**
-   - Edit HTML in `index.html`
-   - Modify styles in `css/styles.css`
-   - Add functionality in `js/script.js`
+## Technologies
 
-### GitHub Pages Deployment
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-2. **Enable GitHub Pages**
-   - Go to your repository settings
-   - Scroll to "Pages" section
-   - Select "Deploy from a branch"
-   - Choose "main" branch and "/ (root)" folder
-   - Save settings
-
-3. **Access your site**
-   - Your site will be available at: `https://automateverse.github.io/[repository-name]`
-   - It may take a few minutes for the first deployment
-
-## Customization
-
-### Content
-- Update the content in `index.html` to reflect your information
-- Replace placeholder text with your actual projects and details
-- Add your contact information
-
-### Styling
-- Modify colors, fonts, and layouts in `css/styles.css`
-- The CSS uses CSS custom properties for easy theming
-- Responsive breakpoints are at 768px and 480px
-
-### Functionality
-- Add new interactive features in `js/script.js`
-- The existing code includes mobile menu, smooth scrolling, and animations
-
-## Browser Support
-
-- ✅ Chrome (60+)
-- ✅ Firefox (60+)
-- ✅ Safari (12+)
-- ✅ Edge (79+)
-
-## Technologies Used
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with flexbox and grid
-- **JavaScript** - Vanilla JS for interactivity
-- **GitHub Pages** - Free hosting
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- **HTML5** — Semantic markup with structured data
+- **CSS3** — Custom properties, grid, flexbox, animations, glassmorphism
+- **JavaScript** — Vanilla ES6+, Intersection Observer API
+- **Fonts** — Inter + Space Grotesk (Google Fonts)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you have any questions or need help with deployment, please open an issue in this repository.
+MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-**Note:** Remember to replace placeholder content with your actual information before deploying to production.
+&copy; 2026 AutomateVerse LLC. All rights reserved.
