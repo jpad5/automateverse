@@ -12,7 +12,7 @@ let pendingPrompt = null;
 
 // Configure the token endpoint URL
 // For GitHub Pages deployment, point to the backend server
-const tokenEndpoint = process.env.WEBCHAT_TOKEN_ENDPOINT || '/api/webchat/token';
+const tokenEndpoint = 'https://automateverse-backend.azurewebsites.net/api/webchat/token';
 
 launcher.addEventListener('click', async () => {
   togglePanel(true);
