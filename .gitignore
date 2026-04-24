@@ -1,0 +1,6 @@
+# Deployment scripts and guides
+DEPLOYMENT_GUIDE.md
+QUICK_DEPLOY.md
+WEBCHAT_INTEGRATION.md
+deploy-to-azure.ps1
+deploy-to-azure.sh
